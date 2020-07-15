@@ -1,0 +1,19 @@
+/* Логотип */
+
+.logo {
+  color: $accent-color;
+  font-family: $logo-font-family;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  & &-first {
+    color: $logo-color;
+  }
+
+  & &-second {
+    color: $btn-txt-color;
+  }
+}

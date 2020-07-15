@@ -1,0 +1,33 @@
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  padding-top: 34px;
+  padding-bottom: 30px;
+
+  .item a:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .link {
+    display: flex;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color $transition-timing $timing-function;
+  }
+
+  .link:focus {
+    color: $accent-color;
+  }
+}
+
+.link-svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}

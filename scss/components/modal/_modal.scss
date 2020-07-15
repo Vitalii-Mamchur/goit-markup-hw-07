@@ -1,0 +1,35 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 450px;
+  max-height: 609px;
+  padding: 40px;
+  background-color: $btn-txt-color;
+  box-shadow: $modal-shadow;
+  border-radius: 4px;
+
+  &-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
+}
+
+.close {
+  display: block;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  fill: $logo-color;
+
+  transition: fill $transition-timing $timing-function;
+}
