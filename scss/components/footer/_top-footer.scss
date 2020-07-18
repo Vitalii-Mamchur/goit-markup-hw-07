@@ -1,0 +1,48 @@
+.main-footer {
+  background: $bg-footer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-part {
+  display: flex;
+  align-items: baseline;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+.address-part > .logo {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 8px;
+}
+
+.auth .city {
+  display: inline-block;
+  color: $btn-txt-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 9px;
+}
+
+.auth .links {
+  display: inline-block;
+  color: $auth-links-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+
+  transition: color $transition-timing $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth .meil {
+  margin-bottom: 9px;
+}

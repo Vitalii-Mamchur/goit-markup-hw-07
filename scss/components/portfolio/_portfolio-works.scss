@@ -1,0 +1,87 @@
+.portfolio {
+  padding-top: 0;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .works-items {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid $border-color;
+
+    &:hover,
+    &:focus {
+      box-shadow: $works-items-shadow;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.works-items .works-link {
+  display: inline-block;
+  text-decoration: none;
+
+  &-img {
+    width: 100%;
+  }
+}
+
+.work-info {
+  padding: 20px 24px;
+}
+
+.works .title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.work-info > .sub {
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.works-link-activ {
+  position: relative;
+  overflow: hidden;
+}
+
+.works-link-activ > .txt {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 294px;
+  color: $btn-txt-color;
+  background: $accent-color;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition: transform $transition-timing $timing-function,
+    opacity $transition-timing $timing-function;
+}
+
+.works-items:hover .txt,
+.works-items:focus .txt {
+  opacity: 1;
+  transform: translateY(0);
+}

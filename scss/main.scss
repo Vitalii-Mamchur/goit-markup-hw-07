@@ -1,10 +1,25 @@
-//Variables
+// Variables
 @import "./utils/variables";
+
+// Utils
 @import "./utils/base";
 
 // Components
+@import "./components/header/main-header";
 @import "./components/logo";
-@import "./components/navigation";
-@import "./components/authorization";
+@import "./components/header/navigation";
+@import "./components/header/authorization";
+@import "./components/studio/hero";
 @import "./components/modal/modal";
 @import "./components/modal/form";
+@import "./components/modal/checkbox";
+@import "./components/modal/contract";
+@import "./components/studio/advantages";
+@import "./components/studio/our-works";
+@import "./components/studio/team";
+@import "./components/studio/clients";
+@import "./components/footer/top-footer";
+@import "./components/footer/connection";
+@import "./components/footer/copyright";
+@import "./components/portfolio/projects";
+@import "./components/portfolio/portfolio-works";

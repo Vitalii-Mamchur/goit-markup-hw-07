@@ -1,0 +1,49 @@
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-list {
+    display: flex;
+    align-items: center;
+
+    & > .item {
+      width: calc((100% - 30px * 3) / 4);
+    }
+  }
+}
+
+.list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages .title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.item-image {
+  background: $bg-color;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  &-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.item .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

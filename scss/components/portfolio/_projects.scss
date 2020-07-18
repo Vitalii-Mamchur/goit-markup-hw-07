@@ -1,0 +1,52 @@
+.section-projects {
+  padding-top: 93px;
+  padding-bottom: 94px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid #ececec;
+}
+
+.container-project {
+  width: 1200px;
+  margin-top: 0px;
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.project .project-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  height: 38px;
+  border-radius: 4px;
+  border-width: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
+  padding: 6px 22px;
+}
+
+.project .button {
+  color: $title-text-color;
+  background: $bg-color;
+
+  transition: color $transition-timing $timing-function,
+    background $transition-timing $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $btn-txt-color;
+    background: $accent-color;
+    border-width: 0;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+  }
+}

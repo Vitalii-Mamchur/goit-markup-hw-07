@@ -1,0 +1,11 @@
+footer > .copy {
+  color: $copy-color;
+  background: $bg-footer;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid $bg-btn-color;
+}

@@ -6,6 +6,33 @@ body {
   background: $btn-txt-color;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.container {
+  width: 1200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .btn {
   color: $btn-txt-color;
   font-size: 16px;
@@ -14,6 +41,8 @@ body {
   letter-spacing: 0.06em;
   background-color: $accent-color;
   cursor: pointer;
+  padding: 0;
+  border: 0;
 
   min-width: 200px;
   min-height: 50px;
@@ -25,10 +54,28 @@ body {
     border $transition-timing $timing-function,
     background-color $transition-timing $timing-function;
 
-  :hover,
-  :focus {
+  &:hover,
+  &:focus {
     border: 0;
     color: $accent-color;
     background-color: $btn-txt-color;
   }
+}
+
+.invisible-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.item .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  text-transform: uppercase;
 }

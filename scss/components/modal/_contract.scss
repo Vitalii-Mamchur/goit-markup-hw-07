@@ -1,0 +1,26 @@
+.contract {
+  color: $accent-color;
+}
+
+.submit-btn {
+  color: $btn-txt-color;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  cursor: pointer;
+
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px transparent;
+  border-radius: 4px;
+  box-shadow: $btn-shadow;
+
+  transition: background-color $transition-timing $timing-function;
+
+  &-btn:hover,
+  &-btn:focus {
+    background-color: $accent-bg-color;
+  }
+}

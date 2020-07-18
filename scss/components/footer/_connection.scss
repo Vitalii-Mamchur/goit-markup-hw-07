@@ -1,0 +1,94 @@
+.footer-part .txt {
+  display: block;
+  margin-bottom: 20px;
+  color: $btn-txt-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-part .sign {
+  color: $btn-txt-color;
+  background: $accent-color;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.social {
+  margin-left: 69px;
+}
+
+.footer-social-networks {
+  display: flex;
+  justify-content: space-evenly;
+
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-networks-button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  background-color: $bg-btn-color;
+  border-radius: 50%;
+
+  transition: background-color $transition-timing $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.button-icon {
+  fill: $btn-txt-color;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+  height: 20px;
+}
+
+.mailing {
+  display: block;
+  margin-left: auto;
+
+  &-flex {
+    display: flex;
+  }
+
+  &-btn-svg {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 10px;
+    fill: currentColor;
+  }
+}
+
+.footer-form-input {
+  min-width: 358px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  background-color: inherit;
+  border: 1px solid $input-border-color;
+  box-shadow: $btn-shadow;
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: $btn-txt-color;
+}
