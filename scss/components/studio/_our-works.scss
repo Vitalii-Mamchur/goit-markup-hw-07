@@ -20,6 +20,7 @@
     display: flex;
     width: calc((100% - 30px * 2) / 3);
     height: 294px;
+    z-index: -1;
 
     &:nth-child(1) {
       background-image: url(../img/img1.jpg);
